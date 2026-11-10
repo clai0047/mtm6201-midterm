@@ -1,7 +1,33 @@
-/*
 
-My Coffee House - Midterm
 
-Mobile-first responsive landing page
-desktop and tablet layouts will be added
-using min-width media queries
+
+h1,
+h2,
+h3,
+nav{
+    font-family: 'Lato', sans-serif;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/*main content wrapper*/
+.wrapper {
+    width: calc(100% - 2rem);
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Basic CSS reset */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Karla', sans-serif;
+    line-height: 1.5;
+}
