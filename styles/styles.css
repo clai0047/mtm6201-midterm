@@ -1,27 +1,5 @@
 
-
-
-h1,
-h2,
-h3,
-nav{
-    font-family: 'Lato', sans-serif;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-}
-
-/*main content wrapper*/
-.wrapper {
-    width: calc(100% - 2rem);
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-/* Basic CSS reset */
+                                            /* Basic CSS reset */
 * {
     box-sizing: border-box;
 }
@@ -30,4 +8,406 @@ body {
     margin: 0;
     font-family: 'Karla', sans-serif;
     line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+nav{
+    font-family: 'Lato', sans-serif;
+}
+                                             /*HEADER*/
+.site-header {
+    background-color: #333;
+    padding: 1rem 0;
+}
+.site-header .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+                                             /*LOGO*/
+.logo img {
+    width: 180px;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/*MAIN CONTENT WRAPPER*/
+.wrapper {
+    width: calc(100% - 2rem);
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+
+                                        /*NAVIGATION*/
+.site-header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+
+
+.site-header nav a {
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+}
+
+
+                                    /* SKIP LINK ACCESSIBILITY */
+.skip-link {
+    position: absolute;
+    left: -9999px;
+}
+
+.skip-link:focus {
+    left: 1rem;
+    top: 1rem;
+    background-color: #fff;
+    color: #000;
+    padding: 0.5rem;
+    z-index: 1000;
+}
+
+                                        /**HERO SECTION**/
+#hero {
+    background-image: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), url('../images/coffee-shop.jpeg');
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    min-height: 450px;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    padding:3rem 0;
+
+}
+.hero-content h1 {
+    font-size: 3rem;
+    line-height: 1.1;
+    margin-bottom: 1rem;
+    text-align:center
+}
+
+.hero-content p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    max-width: 600px;
+    text-align:center
+}  
+.hero-content .button {
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+                                                 /*BUTTONS*/
+                    
+.button {
+    display: inline-block;
+    background-color: #c78c06;
+    color: #000;
+    text-decoration: none;
+    padding: 0.8rem 1.5rem;
+    font-weight: 700;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #ffe6ac;
+}
+
+.button:active {
+    background-color: #fff;
+}
+
+                                        /* EXPLORE OUR MENU BUTTON */
+                             /*targeting menu and hero button while leaving other buttons*/
+.menu-promo .button,
+.hero-content .button{
+    background-color: #fff;
+    color: #000;
+}
+                                            /* WELCOME SECTION */
+#welcome {
+    padding: 3rem 0;
+    background-color: #f4f1ea;
+}
+
+#welcome .wrapper > p {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: #c78c06;
+}
+#welcome h2 {
+    font-size: 2rem;
+    line-height: 1.2;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+}
+
+                                            /*COFFEE IMAGE GALLERY*/
+.coffee-gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+.feature {
+    background-color: #fff;
+    padding: 1.5rem;
+}
+
+.feature img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto 1rem;
+}
+
+.feature h3 {
+    font-size: 1.4rem;
+    margin-top: 0;
+}
+
+.feature p {
+    margin-bottom: 0;
+}
+
+.coffee-gallery img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+                                         /* MENU AND LOCATIONS SECTION */
+#menu-locations {
+    padding: 3rem 0;
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url('../images/coffee-shop.jpeg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+
+.menu-promo,
+.locations-promo {
+    padding: 2rem 1.5rem;
+    margin-bottom: 1.5rem;
+    background-color: transparent;
+}
+
+                                    /* MENU AND LOCATIONS TEXT COLOURS */
+.menu-promo > p,
+.locations-promo > p {
+    color: #c78c06;
+    text-transform: uppercase;
+}
+
+.menu-promo h2,
+.locations-promo h2 {
+    color: #fff;
+}
+
+                                            /* ABOUT SECTION */
+#about {
+    padding: 3rem 0;
+    background-color: #f4f1ea;
+    text color: #c78c06;
+}
+
+#about .wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.about-image img { /*replaced height and cover to height auto because cover cut off the image and made it look bad*/
+    width: 100%;
+    height: auto;
+    
+}
+
+.about-content h2 {
+    font-size: 1.5rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    color: #c78c06;
+}
+
+.about-content p {
+    margin-bottom: 1rem;
+}
+
+                                        /* TESTIMONIAL SECTION*/
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+.testimonial {
+    background-color: #fff;
+    padding: 1.5rem;
+}
+
+.testimonial p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+/* TESTIMONIAL HEADINGS */
+.testimonial-label {
+    color: #c78c06;
+    font-size: 1.25rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+#testimonials h2 {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 2rem;
+}
+                                            /* FEATURES GRID */
+.features-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+                                /* FEATURES - MATCH THE REFERENCE DESIGN */
+#features {
+    background-color: #f4f1ea;
+    text-align: center;
+    padding: 3rem 0;
+}
+
+#features .wrapper > p {
+    color: #c78c06;
+} 
+
+.feature {
+    background-color: transparent;
+    padding: 0;
+    text-align: center;
+}
+                                /* DESKTOP LAYOUT - 1100px AND UP */
+@media screen and (min-width: 1100px) {
+
+                                    /* DESKTOP HEADER */
+    .site-header .wrapper {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .site-header nav ul {
+        gap: 2rem;
+    }
+
+                                /* DESKTOP COFFEE GALLERY */
+    .coffee-gallery {
+        grid-template-columns: 2fr 1fr 1fr;
+        grid-template-rows: 200px 200px;
+    }
+
+    .coffee-gallery img {
+        height: 100%;
+    }
+
+    .coffee-gallery img:first-child {
+        grid-column: 1;
+        grid-row: 1 / 3;
+    }
+                                        /* DESKTOP HERO */
+    #hero {
+        min-height: 560px;
+        padding: 4rem 0;
+    }
+
+    .hero-content {
+        max-width: 600px;
+    }
+
+    .hero-content h1 {
+        font-size: 3rem;
+        line-height: 1.1;
+    }
+
+                                        /* DESKTOP FEATURES */
+    .features-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+                                /* DESKTOP MENU AND LOCATIONS */
+    #menu-locations .wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+
+    .menu-promo,
+    .locations-promo {
+        text-align: center;
+        margin-bottom: 0;
+    }
+                                /* DESKTOP ABOUT SECTION */
+    #about .wrapper {
+        flex-direction: row;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .about-image,
+    .about-content {
+        flex: 1;
+    }
+                                 /* DESKTOP TESTIMONIALS */
+    #testimonials {
+        background-color: #222;
+        color: #fff;
+        padding: 3rem 0;
+    }
+
+    .testimonials-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+    }
+
+    .testimonial {
+        background-color: #333;
+        color: #fff;
+    }
+}                   
+
+ /* FOOTER */
+#footer {
+    background-color: #222;
+    color: #fff;
+    padding: 1.5rem 0;
+    text-align: center;
+    font-size: 0.85rem;
 }
