@@ -18,7 +18,7 @@ nav{
 }
                                              /*HEADER*/
 .site-header {
-    background-color: #333;
+    background-color: #000000;
     padding: 1rem 0;
 }
 .site-header .wrapper {
@@ -231,7 +231,7 @@ img {
 #about {
     padding: 3rem 0;
     background-color: #f4f1ea;
-    text color: #c78c06;
+    text-color: #c78c06;
 }
 
 #about .wrapper {
@@ -267,6 +267,41 @@ img {
 .testimonial {
     background-color: #fff;
     padding: 1.5rem;
+    text-color:color: #c78c06;
+}
+                                    /*TESTIMONIAL PHOTO CARDS*/
+.testimonial {
+    min-height: 550px;   /*300px was first try but cut off foreheads*/
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 1.5rem;
+    color: #fff;
+    text-align: left;
+}
+                                        /* CUSTOMER PHOTOS */
+.jane {
+    background-image: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.75)),
+    url('../images/testimonial-1.jpeg');
+}
+
+.scott {
+    background-image: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.75)),
+    url('../images/testimonial-2.jpeg');
+}
+
+.susie {
+    background-image: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.75)),
+    url('../images/testimonial-3.jpeg');
+}
+.testimonial img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    margin-bottom: 1rem;
 }
 
 .testimonial p {
@@ -274,16 +309,23 @@ img {
     margin-bottom: 1rem;
 }
 
-/* TESTIMONIAL HEADINGS */
-.testimonial-label {
+.testimonial p:last-child {
     color: #c78c06;
-    font-size: 1.25rem;
     font-weight: 700;
-    text-align: center;
+    margin-bottom: 0;
+}
+
+                                        /* TESTIMONIAL HEADINGS */
+ .testimonial-label {
+    color: #c78c06;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 700;
+    text-align: left;
     margin-bottom: 0.5rem;
 }
 
-#testimonials h2 {
+.testimonials h2 {
     color: #fff;
     text-transform: uppercase;
     font-size: 2rem;
@@ -387,7 +429,7 @@ img {
     }
                                  /* DESKTOP TESTIMONIALS */
     #testimonials {
-        background-color: #222;
+        background-color: #000000;
         color: #fff;
         padding: 3rem 0;
     }
@@ -403,9 +445,9 @@ img {
     }
 }                   
 
- /* FOOTER */
+                                /* FOOTER */
 #footer {
-    background-color: #222;
+    background-color: #000000;
     color: #fff;
     padding: 1.5rem 0;
     text-align: center;
