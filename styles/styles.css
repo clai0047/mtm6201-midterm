@@ -371,6 +371,11 @@ img {
     text-align: left;
     margin-bottom: 0.5rem;
 }
+   #testimonials { /*moved out of desktop media query so background colour in testimonials will apply to all screen sizes!*/
+        background-color: #000000;
+        color: #fff;
+        padding: 3rem 0;
+    }
 
 #testimonials h2 {
     color: #fff;
