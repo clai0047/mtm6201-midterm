@@ -140,6 +140,37 @@ img {
     background-color: #fff;
     color: #000;
 }
+                                            /* VIEW LOCATIONS BUTTON */
+.locations-promo .button {
+    background-color: transparent; /*makes button transparent with white text keeps hover*/
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+.locations-promo .button:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.locations-promo .button:active {
+    background-color: #d69e3d;
+    color: #000;
+}
+                                                    /* ABOUT - LEARN MORE BUTTON */
+.about-content .button {
+    background-color: #000;   /* makes button black with white text*/
+    color: #fff;
+}
+
+.about-content .button:hover {
+    background-color: #966f2c;
+    color: #fff;
+}
+
+.about-content .button:active {
+    background-color: #d69e3d;
+    color: #000;
+}
                                         /* WHITE BUTTON HOVER AND ACTIVE STATES */
                                         /*activates hover mode for white buttons and creates gold hover*/
 .menu-promo .button:hover,
