@@ -38,7 +38,7 @@ img {
     display: block;
 }
 
-/*MAIN CONTENT WRAPPER*/
+                                        /*MAIN CONTENT WRAPPER*/
 .wrapper {
     width: calc(100% - 2rem);
     max-width: 1200px;
@@ -98,14 +98,13 @@ img {
 
 }
 .hero-content h1 {
-    font-size: 3rem;
     line-height: 1.1;
     margin-bottom: 1rem;
     text-align:center
 }
 
 .hero-content p {
-    font-size: 1.1rem;
+    font-size: 1rem;
     margin-bottom: 1.5rem;
     max-width: 600px;
     text-align:center
@@ -120,7 +119,7 @@ img {
                     
 .button {
     display: inline-block;
-    background-color: #c78c06;
+    background-color: #d69e3d;
     color: #000;
     text-decoration: none;
     padding: 0.8rem 1.5rem;
@@ -129,11 +128,30 @@ img {
 }
 
 .button:hover {
-    background-color: #ffe6ac;
+    background-color: #966f2c;
 }
 
 .button:active {
     background-color: #fff;
+}
+
+.menu-promo .button,
+.hero-content .button {
+    background-color: #fff;
+    color: #000;
+}
+                                        /* WHITE BUTTON HOVER AND ACTIVE STATES */
+                                        /*activates hover mode for white buttons and creates gold hover*/
+.menu-promo .button:hover,
+.hero-content .button:hover {
+    background-color: #966f2c;
+    color: #fff;
+}
+
+.menu-promo .button:active,
+.hero-content .button:active {
+    background-color: #d69e3d;
+    color: #000;
 }
 
                                         /* EXPLORE OUR MENU BUTTON */
@@ -146,17 +164,16 @@ img {
                                             /* WELCOME SECTION */
 #welcome {
     padding: 3rem 0;
-    background-color: #f4f1ea;
+    background-color: #f3f0e9;
 }
 
 #welcome .wrapper > p {
     font-size: 1.1rem;
     font-weight: 700;
     margin-bottom: 0.5rem;
-    color: #c78c06;
+    color: #d69e3d;
 }
 #welcome h2 {
-    font-size: 2rem;
     line-height: 1.2;
     margin-top: 0;
     margin-bottom: 1.5rem;
@@ -165,8 +182,12 @@ img {
                                             /*COFFEE IMAGE GALLERY*/
 .coffee-gallery {
     display: grid;
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+}
+
+.coffee-gallery img:first-child {
+    grid-column: 1 / -1;
 }
 
 .feature {
@@ -183,7 +204,6 @@ img {
 }
 
 .feature h3 {
-    font-size: 1.4rem;
     margin-top: 0;
 }
 
@@ -218,7 +238,7 @@ img {
                                     /* MENU AND LOCATIONS TEXT COLOURS */
 .menu-promo > p,
 .locations-promo > p {
-    color: #c78c06;
+    color: #d69e3d;
     text-transform: uppercase;
 }
 
@@ -230,8 +250,8 @@ img {
                                             /* ABOUT SECTION */
 #about {
     padding: 3rem 0;
-    background-color: #f4f1ea;
-    text-color: #c78c06;
+    background-color: #f3f0e9;
+    
 }
 
 #about .wrapper {
@@ -247,31 +267,24 @@ img {
 }
 
 .about-content h2 {
-    font-size: 1.5rem;
     margin-top: 0;
     margin-bottom: 1rem;
-    color: #c78c06;
+    color: #d69e3d;
 }
 
 .about-content p {
     margin-bottom: 1rem;
 }
-
-                                        /* TESTIMONIAL SECTION*/
+/* TESTIMONIAL SECTION */
 .testimonials-grid {
     display: grid;
     grid-template-columns: 1fr;
     gap: 1.5rem;
 }
 
+                                            /* TESTIMONIAL PHOTO CARDS */
 .testimonial {
-    background-color: #fff;
-    padding: 1.5rem;
-    text-color:color: #c78c06;
-}
-                                    /*TESTIMONIAL PHOTO CARDS*/
-.testimonial {
-    min-height: 550px;   /*300px was first try but cut off foreheads*/
+    min-height: 550px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -282,7 +295,8 @@ img {
     color: #fff;
     text-align: left;
 }
-                                        /* CUSTOMER PHOTOS */
+
+                                                /* CUSTOMER PHOTOS */
 .jane {
     background-image: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.75)),
     url('../images/testimonial-1.jpeg');
@@ -297,27 +311,29 @@ img {
     background-image: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.75)),
     url('../images/testimonial-3.jpeg');
 }
-.testimonial img {
-    width: 100%;
-    height: 180px;
-    object-fit: cover;
-    margin-bottom: 1rem;
-}
 
+                                                /* TESTIMONIAL TEXT */
 .testimonial p {
+    font-family: 'Karla', sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
     margin-top: 0;
     margin-bottom: 1rem;
 }
 
 .testimonial p:last-child {
-    color: #c78c06;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.1rem;
     font-weight: 700;
+    color: #d69e3d;
     margin-bottom: 0;
 }
 
+
+
                                         /* TESTIMONIAL HEADINGS */
  .testimonial-label {
-    color: #c78c06;
+    color: #d69e3d;
     text-transform: uppercase;
     font-size: 1rem;
     font-weight: 700;
@@ -325,10 +341,9 @@ img {
     margin-bottom: 0.5rem;
 }
 
-.testimonials h2 {
+#testimonials h2 {
     color: #fff;
     text-transform: uppercase;
-    font-size: 2rem;
     text-align: center;
     margin-top: 0;
     margin-bottom: 2rem;
@@ -342,22 +357,80 @@ img {
 
                                 /* FEATURES - MATCH THE REFERENCE DESIGN */
 #features {
-    background-color: #f4f1ea;
+    background-color: #f3f0e9;
     text-align: center;
     padding: 3rem 0;
 }
 
 #features .wrapper > p {
-    color: #c78c06;
+    color: #d69e3d;
 } 
 
 .feature {
     background-color: transparent;
     padding: 0;
     text-align: center;
+
+}
+
+
+                                                        /* MOBILE TYPOGRAPHY */
+h1 {
+    font-size: 2.027rem;
+}
+
+h2 {
+    font-size: 1.802rem;
+}
+
+h3 {
+    font-size: 1.424rem;
+}
+
+p {
+    font-size: 1rem;
+}
+                                    /* TABLET LAYOUT - 768px AND UP breaking point for tablet size*/
+
+    @media screen and (min-width: 768px) {
+        h1 {
+    font-size: 2.986rem;
+}
+
+h2 {
+    font-size: 2.488rem;
+}
+
+h3 {
+    font-size: 1.728rem;
+}
+
+    .coffee-gallery {
+        grid-template-columns: repeat(2, 1fr);  /*creates large left 4 small right in tablet size*/
+    }
+
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .testimonials-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
 }
                                 /* DESKTOP LAYOUT - 1100px AND UP */
 @media screen and (min-width: 1100px) {
+    h1 {
+    font-size: 3.815rem;
+}
+
+h2 {
+    font-size: 3.052rem;
+}
+
+h3 {
+    font-size: 1.953rem;
+}
 
                                     /* DESKTOP HEADER */
     .site-header .wrapper {
@@ -395,7 +468,6 @@ img {
     }
 
     .hero-content h1 {
-        font-size: 3rem;
         line-height: 1.1;
     }
 
@@ -452,4 +524,5 @@ img {
     padding: 1.5rem 0;
     text-align: center;
     font-size: 0.85rem;
+    border-top: 0.25px solid #fff; /*creates white line at top of footer*/
 }
